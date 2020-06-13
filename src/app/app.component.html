@@ -1,7 +1,18 @@
 <hello name="{{ name }}"></hello>
+
+<app-top-bar></app-top-bar>
+
+<div class="container">
+  <router-outlet>
+
+    
 <app-home></app-home>
 <app-world></app-world>
 <app-tamilnadu></app-tamilnadu>
+  </router-outlet>
+</div>
+
+
 <ul>
   <li *ngFor = "let item of data">
     {{item.body}}
